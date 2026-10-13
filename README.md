@@ -26,10 +26,11 @@ Product page and ordering: [RetroDisks on SmallRun](https://smallrun.net/shop/re
 12. [Bluetooth mode](#bluetooth-mode)
 13. [Battery, charging and sleep](#battery-charging-and-sleep)
 14. [Firmware updates](#firmware-updates)
-15. [Troubleshooting](#troubleshooting)
-16. [Reversing the mod](#reversing-the-mod)
-17. [Specifications](#specifications)
-18. [Reporting a problem](#reporting-a-problem)
+15. [Enclosure files](#enclosure-files)
+16. [Troubleshooting](#troubleshooting)
+17. [Reversing the mod](#reversing-the-mod)
+18. [Specifications](#specifications)
+19. [Reporting a problem](#reporting-a-problem)
 
 ---
 
@@ -277,6 +278,22 @@ The version is `major.minor.build`, for example `0.2.91`. The running version is
 **Updating the dongle** is the same through the dongle's page: hold **LT + RT + Black + D-pad Right**, join Breakaway-Dongle-XXXX, upload the dongle file.
 
 Each board refuses a file built for the other board. An update never touches your pairing or settings, and a failed or interrupted upload leaves the current firmware in place.
+
+## Enclosure files
+
+The pack's printed parts are in this repository's [`enclosure/`](enclosure/) folder as STL files, for a replacement or your own print. Each controller has two parts: the **body**, the dome that sits in place of the Memory Unit retainer, and the **cradle**, the carrier inside it that holds the board and the cell.
+
+| File | Controller | Part |
+|---|---|---|
+| `duke-pack-body.stl` | Duke | Dome |
+| `duke-pack-cradle.stl` | Duke | Board and cell carrier |
+| `controller-s-pack-body.stl` | Controller S | Dome |
+| `controller-s-pack-cradle.stl` | Controller S | Board and cell carrier |
+
+These are the rev 2 parts, matched to the rev 2 pack board: M2 screw bosses, the USB-C shaft centered on the edge, and the PAIR plunger and LED holes in the dome top. The Duke and Controller S parts are not interchangeable. The production parts are printed in black resin and sanded; the body has no flat face, so print it dome-up on supports under the flange or crest-down in a bowl of supports. Download a file the same way as firmware: open it on GitHub and use **Download raw file**. Print notes are in the folder's [README](enclosure/README.md).
+
+<!-- CONFIRM: the rev-2 enclosure sync (2026-10-06/07) was unprinted as of
+     the design notes. Replace the STLs once a print confirms fit. -->
 
 ## Troubleshooting
 
