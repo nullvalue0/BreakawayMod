@@ -59,7 +59,7 @@ The controller's own cable is cut and its four wires land in a screw terminal in
 - Refurbishment: the shell, buttons, thumbsticks and button membrane are disassembled and washed; the mainboard is cleaned with isopropyl alcohol and the stick and trigger potentiometers with contact cleaner to restore their full range. Worn Controller S thumbsticks are replaced with new aftermarket parts that are virtually identical to the originals. No replacement thumbsticks exist for the Duke, so only Dukes with good original sticks are sold. These are 20-year-old controllers, so expect minor scuffs; nothing with cracks or noticeable damage is sold.
 - Each pre-modded controller is **calibrated on the bench** before it ships. The calibration lives in the pack. **Restore defaults** on the Controller health card clears it; if you ever do that, redo it with **Capture center** and **Use as range** (see [Calibration, tuning and controller health](#calibration-tuning-and-controller-health)).
 
-You supply the controller (kit) and a USB-C cable and charger for the pack.
+You must supply your own USB charger and USB-C cable for charging. The pack charges at up to 1 A, so any 5 V USB charger rated 1 A or more is ideal; a typical phone charger qualifies.
 
 ## Before you start
 
@@ -69,7 +69,7 @@ You supply the controller (kit) and a USB-C cable and charger for the pack.
 - Wire cutters
 - Wire stripper (the controller's conductors are thin, 26 to 28 AWG)
 - Small flat-blade (jeweler's) screwdriver for the screw terminal
-- Optional: a small zip tie or a dab of hot glue for strain relief
+- Electrical tape for strain relief
 
 **Read this first**
 
@@ -101,8 +101,8 @@ The final installation guide and video are being produced and will be released b
    | 3 | **White** |
    | 4 | Black (GND) |
 
-   Green and white are deliberately **not** in the usual USB color order. This is the order that enumerates on real Duke and Controller S cables. Tighten each screw firmly and tug-test every wire.
-6. **Strain-relieve the stub.** Zip-tie it to an internal boss or tack it with a dab of hot glue where it turns up toward the pack, so that flexing never reaches the factory solder joints on the controller board.
+   Follow the order marked on the pack's silkscreen beside the terminal. Tighten each screw firmly and tug-test every wire.
+6. **Strain-relieve the stub.** Wrap a few turns of electrical tape around the stub where it turns up toward the pack, so that flexing never reaches the factory solder joints on the controller board.
 7. **Seat the pack.** The pack's flange goes where the memory unit insert was: it fits from inside the top shell, with the flange captured under the shell at the parting line, and the dome rising through the opening. The hood at the rear of the dome covers the shell's old cable notch. The cable stub enters the pack through the channel under that hood. Check that the stub is not pinched anywhere.
 8. **Close the controller.** Refit the top shell and screws.
 9. **Test before you put the screwdriver away.** Go to [First power-up and pairing](#first-power-up-and-pairing). If the pack's LED triple-blinks, the controller is not enumerating: open it back up and check the terminal order and that every wire is gripped.
@@ -125,7 +125,7 @@ The procedure is the same as the Duke's with these differences:
 - The small plunger in the lid is the PAIR button. The window beside it is the status LED.
 - The dongle raises its own config page for firmware updates; see [The config page](#the-config-page).
 
-Bench check if a dongle ever stops enumerating: with the dongle seated and the console off, the plug's D+ and D− contacts should each read roughly 15 kΩ to ground. That is the console's own pull-down, and it proves both data contacts are making contact in the port.
+Bench check if a dongle ever stops enumerating: with the dongle seated and the console off, the plug's D+ and D− (Green & White) contacts should each read roughly 15 kΩ to ground (black). That is the console's own pull-down, and it proves both data contacts are making contact in the port.
 
 ## First power-up and pairing
 
